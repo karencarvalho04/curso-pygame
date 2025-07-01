@@ -38,9 +38,9 @@ pygame.init()
 clock = pygame.time.Clock()
 
 # Game Screen
-screen_width = 400
-screen_height = 400
-screen = pygame.display.set_mode((screen_width,screen_height))
+largura = 400
+altura = 400
+screen = pygame.display.set_mode((largura,altura))
 pygame.display.set_caption("Sprite Animation")
 
 # Creating the sprites and groups
