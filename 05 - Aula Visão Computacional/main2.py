@@ -10,12 +10,13 @@ while True:
     if not ret:
         break
 
-    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Converte para escala de cinza
+    # Converte para escala de cinza
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5)
 
     # Desenha um retângulo em cada rosto encontrado
     for (x, y, w, h) in faces:
-        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+        cv2.rectangle(frame, (x, y), (x+w, y+h),(0, 255, 0), 2)
 
     cv2.imshow("Detector de Rostos", frame)
 

@@ -17,7 +17,8 @@ while True:
 
     if result.multi_face_landmarks:
         for face in result.multi_face_landmarks:
-            mp_draw.draw_landmarks(frame, face, mp_face.FACEMESH_TESSELATION)
+            mp_draw.draw_landmarks
+            (frame, face, mp_face.FACEMESH_TESSELATION)
 
     cv2.imshow("Espelho Mágico", frame)
 
