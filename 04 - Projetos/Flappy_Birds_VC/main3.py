@@ -59,7 +59,7 @@ class FlapBirds:
         self.clock = pg.time.Clock()
         self.font = pg.font.SysFont("Courier New", 50, bold=True)
 
-        self.gravity = 5
+        self.gravity = 12
         self.in_play = True
         self.bird_pos = [100, 100]
         self.vertical_speed = 0
